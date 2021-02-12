@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            
+            width: 20%;
+            margin-left : 45%;
+            border-style: solid;
+            border-bottom-color:yellowgreen;
+            
+        }
+        div {
+            border: solid blue;
+            border-width: 5px;
+            border-bottom-style: outset;
+            
+           
+        }
+        .container {
+            border-radius: 10px;
+            background-color:#f2f2f2;
+            padding: 20px;
+        }
+        h3 {
+            padding: 15px;
+            border-style: solid;
+            /*border: red;*/
+            border-color: skyblue;
+           /*border-bottom: 4px double red;*/
+           border-radius: 30px 30px 20px 10px;
+        }
+        
+
+        h5 {
+            /*border-left: 15px solid purple;*/
+            border-left-color: purple;
+            border-left-style: solid;
+            border-left-width: 5px;
+            /*border-right: 10px ridge red;*/
+            border-right-color: red;
+            border-right-style: ridge;
+            border-right-width: 15px;
+            /*border-top: 5px outset palevioletred;*/
+            border-top-color: palevioletred;
+            border-top-style: outset;
+            border-top-width: 5px;
+            /*border-bottom: 5px double gold;*/
+            border-bottom-color: gold;
+            border-bottom-style: double;
+            border-bottom-width: 5px;
+
+        }
+        .txt{
+            width: calc( 100% - 20px );
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <h3>Responsive Form</h3>
+
+    <h5>Fill the below form</h5>
+    <div class="container" id="ex1">
+    <form id="signup">
+        <label for="fname">First name:</label><br>
+        <input class="txt" type="text" id="fname" name="fname" required ><br>
+        <label for="lname">Last name:</label><br>
+        <input class="txt" type="text" id="lname" name="lname" required ><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+        <label for="phone">Enter a phone number:</label><br>
+        <input class="txt" type="tel" id="phone" name="phone" required pattern="[0-9]{10}" required><br>
+        <label for="email">Email:</label><br>
+        <input class="txt" type="email" id="email" name="email" required><br>
+        <label for="pwd">Password:</label><br>
+        <input class="txt" type="password" id="pwd" name="pwd" required minlength="8"><br><br>
+        <button style="min-width: 30%;max-width: 100%;" type="submit" form="signup" value="Submit">Submit</button>
+      </form>
+    </div>
+</body>
+</html>
